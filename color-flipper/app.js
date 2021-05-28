@@ -20,6 +20,7 @@ function simpleFunc(){
 
     body.style.backgroundColor = colors[iterasi];
     color.textContent = colors[iterasi];
+    color.style.textTransform = 'lowercase';
 }
 
 function hexFunc(){
