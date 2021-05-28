@@ -62,10 +62,6 @@ body {
     border-radius: 10px;
 }
 
-#color {
-    text-transform: uppercase;
-}
-
 .cm {
     display: flex;
     justify-content: center;

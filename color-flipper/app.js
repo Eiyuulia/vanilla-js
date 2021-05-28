@@ -26,6 +26,7 @@ function hexFunc(){
     colhex = getHex();
     body.style.backgroundColor = colhex;
     color.textContent = colhex;
+    color.style.textTransform = 'uppercase';
 }
 
 function getHex(){
