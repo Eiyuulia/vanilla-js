@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    color: teal;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(5, 53, 53);
+}
+
+.link a {
+    color: rgb(5, 53, 53);
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: green;
+}
