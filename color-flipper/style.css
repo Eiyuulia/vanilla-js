@@ -62,6 +62,10 @@ body {
     border-radius: 10px;
 }
 
+#color {
+    text-transform: capitalize;
+}
+
 .cm {
     display: flex;
     justify-content: center;
