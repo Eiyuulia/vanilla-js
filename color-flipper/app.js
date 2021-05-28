@@ -6,19 +6,53 @@ const button = document.querySelector('#button');
 const color = document.getElementById('color')
 
 // variabel yg diperlukan
-const colors = ["red", "green", "blue"];
+const colors = ["red", "green", "blue", "purple", "grey", "teal", "amethys", "cyan", "pink","brown", "yellow"];
 let iterasi = 0;
+let simpleHex = false;
+let colhex = "";
 
 // function 
-
-// event listener
-
-button.addEventListener('click', function(){
+function simpleFunc(){
     iterasi++;
-    if(iterasi == 3){
+    if(iterasi == colors.length){
         iterasi = 0;
     }
 
     body.style.backgroundColor = colors[iterasi];
     color.textContent = colors[iterasi];
+}
+
+function hexFunc(){
+    colhex = getHex();
+    body.style.backgroundColor = colhex;
+    color.textContent = colhex;
+}
+
+function getHex(){
+    let sourcehex = ["1","2","3","4","5","6","7","8","9","0","a","b","c","d","e","f"];
+    let hexstring = ["#","","","","","",""];
+    for(let ind = 0; ind < 6; ind++){
+        hexstring[ind+1] = sourcehex[Math.floor(Math.random()*sourcehex.length)];
+    }
+
+    let result = hexstring.toString();
+    result = result.replace(/,/g, "");
+    return result;
+}
+
+// event listener
+button.addEventListener('click', function(){
+    if(simpleHex){
+        hexFunc();
+    } else{
+        simpleFunc();
+    }
+})
+
+hex.addEventListener('click', function(){
+    simpleHex = true;
+})
+
+simple.addEventListener('click', function(){
+    simpleHex = false;
 })

@@ -29,15 +29,17 @@ nav p {
     color: rgb(37, 36, 36);
 }
 
-nav p span {
+nav p a {
     display: block;
     margin: 20px;
+    cursor: pointer;
     transition: 0.1s;
 }
 
-nav p span:hover {
+nav p a:hover {
     color: #4EA6E9;
 }
+
 
 /* content */
 
@@ -66,9 +68,13 @@ body {
 }
 
 #button {
+    border: 3px solid black;
     border-radius: 10px;
+    background-color: inherit;
+    font-weight: bold;
     padding: 8px 30px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 #button:hover {
