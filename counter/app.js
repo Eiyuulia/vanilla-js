@@ -11,28 +11,28 @@ let isiAngka = 0;
 increase.addEventListener('click', function(){
     isiAngka++;
     angka.innerHTML = isiAngka;
+    angkaColor();
 })
 
 decrease.addEventListener('click', function(){
     isiAngka--;
     angka.innerHTML = isiAngka;
+    angkaColor();
 })
 
 reset.addEventListener('click', function(){
     isiAngka = 0;
     angka.innerHTML = isiAngka;
+    angkaColor();
 })
 
-// // function
-// function angkaColor(){
-//     if(isiAngka > 0){
-//         angka.style.color = "green";
-//     } else if(isiAngka < 0){
-//         angka.style.color = "red";
-//     } else{
-//         angka.style.color = "black";
-//     }
-// }
-
-// // active function
-// angkaColor();
+// function
+function angkaColor(){
+    if(isiAngka > 0){
+        angka.style.color = "green";
+    } else if(isiAngka < 0){
+        angka.style.color = "red";
+    } else{
+        angka.style.color = "black";
+    }
+}
