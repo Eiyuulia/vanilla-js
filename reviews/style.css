@@ -73,6 +73,7 @@ section p {
     margin-bottom: 10px;
     text-align: center;
     font-size: 18px;
+    line-height: 25px;
     color: grey;
 }
 
@@ -81,7 +82,7 @@ section .navigator {
     font-size: 25px;
     font-weight: bolder;
     color: var(--job-color);
-    word-spacing: 20px;
+    word-spacing: 30px;
 }
 
 section .navigator #left {
