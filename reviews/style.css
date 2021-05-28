@@ -8,6 +8,7 @@
 :root {
     --image-size: 150px;
     --job-color: rgb(131, 131, 243);
+    --hover-color: rgb(65, 65, 247);
 }
 
 body {
@@ -79,6 +80,7 @@ section .navigator {
     margin-bottom: 10px;
     font-size: 25px;
     font-weight: bolder;
+    color: var(--job-color);
     word-spacing: 20px;
 }
 
@@ -86,8 +88,16 @@ section .navigator #left {
     cursor: pointer;
 }
 
+section .navigator #left:hover {
+    color: var(--hover-color);
+}
+
 section .navigator #right {
     cursor: pointer;
+}
+
+section .navigator #right:hover {
+    color: var(--hover-color);
 }
 
 section button {
