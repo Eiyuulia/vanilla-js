@@ -6,6 +6,7 @@ const job = document.querySelector('.job');
 const p = document.getElementsByTagName('p')[0];
 const left = document.getElementById('left');
 const right = document.getElementById('right');
+const button = document.getElementsByTagName('button')[0];
 
 // class n objeck
 class classReviewer {
@@ -37,7 +38,7 @@ function edit(){
 // event listener
 right.addEventListener('click', function(){
     now++;
-    if(now == 4){
+    if(now == reviewer.length){
         now = 0;
     }
     edit();
@@ -46,7 +47,12 @@ right.addEventListener('click', function(){
 left.addEventListener('click', function(){
     now--;
     if(now == -1){
-        now = 3;
+        now = reviewer.length - 1;
     }
+    edit();
+})
+
+button.addEventListener('click', function(){
+    now = Math.floor(Math.random()*reviewer.length);
     edit();
 })
