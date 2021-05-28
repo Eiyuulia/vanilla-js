@@ -6,7 +6,7 @@ const button = document.querySelector('#button');
 const color = document.getElementById('color')
 
 // variabel yg diperlukan
-const colors = ["red", "green", "blue", "purple", "grey", "teal", "amethys", "cyan", "pink","brown", "yellow"];
+const colors = ["red", "green", "blue", "purple", "grey", "teal", "violet", "cyan", "pink","brown", "yellow"];
 let iterasi = 0;
 let simpleHex = false;
 let colhex = "";
