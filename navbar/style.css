@@ -73,7 +73,5 @@ nav .socmed img {
 }
 
 nav .socmed img:hover {
-    max-width: 30px;
-    max-height: 30px;
-    transform: translate(-5px, -7px);
+    transform: scale(1.5);
 }
