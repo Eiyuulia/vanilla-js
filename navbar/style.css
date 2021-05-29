@@ -1,0 +1,79 @@
+:root {
+    --img-width: 18px;
+    --text-color: #49A6E9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: azure;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70px;
+    box-shadow: 0 0 30px -10px gray;
+    background-color: white;
+}
+
+nav .judul {
+    font-size: 30px;
+    font-weight: bold;
+    word-spacing: 10px;
+}
+
+nav .judul span {
+    text-shadow: -1px 3px 3px gray;
+}
+
+nav .judul #addict {
+    color: var(--text-color);
+}
+
+nav .realnav {
+    display: flex;
+    justify-content: space-around;
+    min-width: 400px;
+}
+
+nav .realnav a {
+    font-size: 16px;
+    color: rgb(63, 63, 63);
+    text-decoration: none;
+    letter-spacing: 4px;
+}
+
+nav .realnav a:hover {
+    color: var(--text-color);
+}
+
+nav .socmed {
+    display: flex;
+    justify-content: space-around;
+    min-width: 160px;
+    max-width: 160px;
+}
+
+nav .socmed div {
+    max-width: var(--img-width);
+    max-height: var(--img-width);
+    cursor: pointer;
+}
+
+nav .socmed img {
+    max-width: var(--img-width);
+    max-height: var(--img-width);
+}
+
+nav .socmed img:hover {
+    max-width: 30px;
+    max-height: 30px;
+    transform: translate(-5px, -7px);
+}
