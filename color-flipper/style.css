@@ -10,7 +10,7 @@
 nav {
     height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     box-shadow: 0 1px 10px rgb(78, 76, 76);
@@ -19,13 +19,14 @@ nav {
 }
 
 nav div {
-    margin-right: 120px;
+    margin-left: 50px;
     color: #4EA6E9;
+    word-spacing: 12px;
 }
 
 nav p {
     display: flex;
-    margin-left: 120px;
+    margin-right: 50px;
     color: rgb(37, 36, 36);
 }
 
@@ -81,4 +82,26 @@ body {
     border: none;
     background-color: rgb(37, 36, 36);
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    nav div {
+        margin-left: 10px;
+        word-spacing: 5px;
+    }
+
+    nav p {
+        margin-right: 0;
+    }
+
+    nav p a {
+        margin: 10px;
+    }
+
+    .bc {
+        max-width: 400px;
+        max-height: 80px;
+        font-size: 18px;
+        padding: 20px 5px;
+    }
 }
