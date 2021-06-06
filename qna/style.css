@@ -26,6 +26,7 @@ main {
 }
 
 main section {
+    position: relative;
     margin: 20px 0;
     padding: 20px;
     border-radius: 10px;
@@ -38,4 +39,18 @@ main section {
     font-size: 12px;
     letter-spacing: 2px;
     word-spacing: 4px;
+}
+
+main section img {
+    position: absolute;
+    left: 650px;
+    bottom: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+main section .img:hover {
+    transform: rotate(180deg);
 }
