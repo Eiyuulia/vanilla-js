@@ -26,7 +26,6 @@ main {
 }
 
 main section {
-    position: relative;
     margin: 20px 0;
     padding: 20px;
     border-radius: 10px;
@@ -36,19 +35,26 @@ main section {
     color: rgb(58, 44, 10);
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 2px;
     word-spacing: 4px;
 }
 
+main .section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 main section img {
-    position: absolute;
-    left: 650px;
-    bottom: 15px;
     width: 30px;
     height: 30px;
     cursor: pointer;
     transition: all 1s ease;
+}
+
+.noneDisplay {
+    display: none;
 }
 
 main section .img:hover {
